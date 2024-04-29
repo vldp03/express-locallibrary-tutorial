@@ -36,6 +36,8 @@ app.use('/cool', usersRouter);
 app.use("/catalog", catalogRouter); // Add catalog routes to middleware chain.
 
 // catch 404 and forward to error handler
+const dev_db_url =
+  "mongodb+srv://popovychvladyslava1:LdpqPb2MQ9SaZwo9@cluster0.gnc9ivv.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
 app.use(function(req, res, next) {
   next(createError(404));
 });
