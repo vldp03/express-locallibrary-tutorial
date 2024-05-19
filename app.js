@@ -34,10 +34,10 @@ app.use(
 // Set up mongoose connection
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-// const mongoDB = "mongodb+srv://popovychvladyslava1:LdpqPb2MQ9SaZwo9@cluster0.gnc9ivv.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
+// const mongoDB = "mongodb+srv://popovychvladyslava1:HyrFXAbNtTNRhqIg@cluster0.jof43ae.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
 
 const dev_db_url =
-  "mongodb+srv://popovychvladyslava1:LdpqPb2MQ9SaZwo9@cluster0.gnc9ivv.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://popovychvladyslava1:HyrFXAbNtTNRhqIg@cluster0.jof43ae.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 main().catch((err) => console.log(err));
